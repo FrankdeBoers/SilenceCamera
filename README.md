@@ -1,7 +1,9 @@
 ﻿# SilenceCamera
 静默拍照，不需要相机预览，可以在后台完成拍照并保存。  可用于人脸验证解锁。
-一、首先需要了解一下相机开发相关知识。相机开发有两个重要的系统类：
-1、Camera.java  (android.hardware.Camera)
+一、 首先需要了解一下相机开发相关知识。相机开发有两个重要的系统类：
+
+1、 Camera.java  (android.hardware.Camera)
+
 2、SurafaceView.java (android.view.SurafaceView)
 
 
@@ -38,6 +40,7 @@ mCamera.startPreview();
      A SurfaceTexture may also be used in place of a SurfaceHolder when specifying the output destination of the older {@link android.hardware.Camera} API. Doing so will cause all the frames from the image stream to be sent to the SurfaceTexture object rather than to the device's display.
      解释：SurfaceTexture也可以在确认相机的输出目标后，用来替代SurfaceHolder。 替换后，相机的图像流数据，不会再输出到设备屏幕，而是输出到SurfaceTexture上。
 　　根据上面的解释，SurfaceTexture也可以用作展示Camera的预览，但是SurfaceTexture可以不显示，这样就可以实现无预览拍照。
+　　
      /**
       * 作者：郭洪成
       * 时间：20180102
