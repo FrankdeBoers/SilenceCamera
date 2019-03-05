@@ -38,7 +38,7 @@ mCamera.startPreview();
 
 经过以上简单的代码，已经实现了Camera预览。
 
-关于Camera正常的预览拍照，可以参考[https://github.com/FrankdeBoers/TensorCamera](https://github.com/FrankdeBoers/TensorCamera)下的LocalCameraManager.java文件。
+关于Camera正常的预览拍照，可以参考[https://github.com/FrankdeBoers/TensorCamera](https://github.com/FrankdeBoers/TensorCamera)下的[LocalCameraManager.java]( https://github.com/FrankdeBoers/TensorCamera/blob/master/app/src/main/java/ghc/tensorflow/LocalCameraManager.java)文件。
 #### 二、如何实现无预览拍照
 由相机开发经验可以知道，从camera读取到的预览（preview）图像流一定要输出到一个可见的（Visible）SurfaceView上，也就是SurfaceView无法在息屏或者用户正常使用APP的时候工作，不然会弹出Camera预览画面，这样用户就知道相机启动了。  
 常规模式的SurfaceView无法实现静默拍照。我们返回第一小节，在对Surface的介绍中，可以看到，SurfaceTexture也可以创建Surface。  而这个SurfaceTexture就是我们实现静默拍照的切入点。
