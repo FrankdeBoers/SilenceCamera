@@ -2,8 +2,8 @@
 # SilenceCamera
 静默拍照，不需要相机预览，可以在后台完成拍照并保存。  可用于人脸验证解锁。
 
-#### ##### #### #### ### ## **一、首先需要了解一下相机开发相关知识。相机开发有两个重要的系统类**：
-- 1、	Camera.java  (android.hardware.Camera)
+#### 一、首先需要了解一下相机开发相关知识。相机开发有两个重要的系统类：
+- 1、Camera.java  (android.hardware.Camera)
 - 2、SurafaceView.java (android.view.SurafaceView)
 
 
