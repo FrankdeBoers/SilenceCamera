@@ -4,10 +4,10 @@
 #### 一、首先需要了解一下相机开发相关知识。相机开发有两个重要的系统类：
 - 1、Camera.java  (android.hardware.Camera)
 - 2、SurafaceView.java (android.view.SurafaceView)
-![CameraSurface]https://github.com/FrankdeBoers/SilenceCamera/blob/master/screen/camera.png
+![image]https://github.com/FrankdeBoers/SilenceCamera/blob/master/screen/camera.png
 
 ##### 1.2 Surface、SurfaceView、SurfaceHolder的关系
-![Surface]https://github.com/FrankdeBoers/SilenceCamera/blob/master/screen/surface.png
+![image]https://github.com/FrankdeBoers/SilenceCamera/blob/master/screen/surface.png
  
 > Surface是用来处理屏幕内容合成器所管理的原始缓存区的工具，它通常由图像缓冲区的消费者创建(如SurfaceTexture、MediaRecorder)，然后被移交到生产者(如MediaPlayer)。
 
